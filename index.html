@@ -74,22 +74,37 @@
             color: #4a4a4a; /* Dark gray for readability */
         }
         #todo {
-            background-color: #ffe0b2; /* Light orange background */
+            background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Gradient for the container */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            color: #4a4a4a; /* Text color for readability */
         }
         #todo h2 {
-            color: #e65100; /* Dark orange for headings */
+            color: #b71c1c; /* Darker red for the heading */
         }
         #todo p {
             color: #4a4a4a; /* Dark gray for readability */
+            margin-bottom: 15px;
         }
-        section a {
+        .todo-container {
+            background-color: #ffffff; /* White background for to-do items */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .todo-container h3 {
+            color: #b71c1c; /* Red color for to-do container headings */
+            margin-top: 0;
+        }
+        .todo-container a {
             color: #3f51b5; /* Blue links */
             text-decoration: none;
             font-weight: bold;
             border-bottom: 2px solid transparent;
             transition: color 0.3s, border-bottom-color 0.3s;
         }
-        section a:hover {
+        .todo-container a:hover {
             color: #5c6bc0; /* Lighter blue on hover */
             border-bottom-color: #5c6bc0;
         }
@@ -136,7 +151,13 @@
         <section id="todo">
             <h2>To-Do List Application</h2>
             <p>This is a simple web-based to-do list application that allows users to add, view, and manage their tasks. The to-do list is a part of my Full Stack Web Development exercises and demonstrates basic CRUD operations using HTML, CSS, and JavaScript.</p>
-            <p>Explore the <a href="https://kavya383.github.io/todo-app/login.html">TO-DO List</a> for a detailed view of each exercise and project, including their objectives, challenges, and outcomes.</p>
+            
+            <!-- To-Do List Container -->
+            <div class="todo-container">
+                <h3>Manage Your Tasks</h3>
+                <p>Click the link below to explore the To-Do List application:</p>
+                <p><a href="https://kavya383.github.io/todo-app/login.html">Open To-Do List Application</a></p>
+            </div>
         </section>
     </main>
 
